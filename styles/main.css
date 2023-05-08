@@ -1,0 +1,98 @@
+.body{
+    margin: 0px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: Arial;
+    text-align: center;
+}
+
+/*Navigaation Bar*/
+.navbar{
+    border-bottom: 1px gray solid;
+    height: 6rem;
+    width: 100%;
+    text-align: left;
+}
+
+/*Navigation Logo*/
+.logo{
+    width: 11.797rem;
+    height: 4rem;
+    margin: 12px 0px 0px 10px;
+}
+.logo:hover{
+    opacity: 0;
+}
+.logo-wink{
+    width: 11.797rem;
+    height: 4rem;
+    margin: 0px;
+    z-index: -1;
+    position: relative;
+    left: -12.063rem;
+}
+
+/*Navigation Links*/
+.navlist{
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    bottom: 1.5rem;
+    word-spacing: 5rem;
+    font-size: 1.7rem;
+    position: relative;
+    left: -10.625rem;
+}
+.navlist > li{
+    display: inline;
+}
+.navlink{
+    color: whitesmoke;
+    text-decoration: none;
+    transition: 1s;
+}
+.navlink:hover{
+    color: blue;
+}
+
+/*Loading Screen*/
+.loading{
+    background-color: black;
+    position: absolute;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    animation: loading 3s ease-in-out forwards;
+}
+.loadinglogo{
+    position: absolute;
+    top: 7rem;
+    left: 24.938rem;
+    animation: logospin 2s ease-in-out forwards;
+}
+
+/*Make the Logo spin*/
+@keyframes logospin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*Make the div fade in and out*/
+@keyframes loading {
+    0%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+        z-index: -1;
+        visibility: hidden;
+    }
+}
